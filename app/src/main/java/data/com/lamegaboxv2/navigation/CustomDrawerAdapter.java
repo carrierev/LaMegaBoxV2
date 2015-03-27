@@ -11,11 +11,14 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import data.com.lamegaboxv2.R;
+
 public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
 
 	Context context;
 	List<DrawerItem> drawerItemList;
 	int layoutResID;
+    int mSelectedItem;
 
 	public CustomDrawerAdapter(Context context, int layoutResourceID,
 			List<DrawerItem> listItems) {
@@ -28,8 +31,6 @@ public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		// TODO Auto-generated method stub
-
 		DrawerItemHolder drawerHolder;
 		View view = convertView;
 
@@ -49,6 +50,14 @@ public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
 
 		}
 
+        if (position == mSelectedItem) {
+            view.setBackgroundColor(context.getResources().getColor(R.color.red900Material));
+            drawerHolder.ItemName.setTextColor(context.getResources().getColor(R.color.white));
+        } else {
+            view.setBackgroundColor(context.getResources().getColor(R.color.white));
+            drawerHolder.ItemName.setTextColor(context.getResources().getColor(R.color.nearDark));
+        }
+
 		DrawerItem dItem = this.drawerItemList.get(position);
 
 		drawerHolder.icon.setImageDrawable(view.getResources().getDrawable(
@@ -58,7 +67,15 @@ public class CustomDrawerAdapter extends ArrayAdapter<DrawerItem> {
 		return view;
 	}
 
-	private static class DrawerItemHolder {
+    public int getmSelectedItem() {
+        return mSelectedItem;
+    }
+
+    public void setmSelectedItem(int mSelectedItem) {
+        this.mSelectedItem = mSelectedItem;
+    }
+
+    private static class DrawerItemHolder {
 		TextView ItemName;
 		ImageView icon;
 	}

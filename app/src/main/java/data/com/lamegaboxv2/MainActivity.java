@@ -1,117 +1,161 @@
 package data.com.lamegaboxv2;
 
-import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import data.com.lamegaboxv2.boxes.AskabFragment;
+import data.com.lamegaboxv2.boxes.BalignonFragment;
+import data.com.lamegaboxv2.boxes.JeanMarieFragment;
+import data.com.lamegaboxv2.boxes.LoutreFragment;
+import data.com.lamegaboxv2.boxes.MisterMvFragment;
+import data.com.lamegaboxv2.boxes.MkFragment;
+import data.com.lamegaboxv2.boxes.MoundirFragment;
+import data.com.lamegaboxv2.boxes.MovieFragment;
+import data.com.lamegaboxv2.boxes.PoubelleFragment;
+import data.com.lamegaboxv2.boxes.RoomTabFragment;
+import data.com.lamegaboxv2.boxes.TlauFragment;
+import data.com.lamegaboxv2.boxes.WilhelmFragment;
+import data.com.lamegaboxv2.boxes.YugiFragment;
+import data.com.lamegaboxv2.boxes.ZelkysFragment;
 import data.com.lamegaboxv2.navigation.CustomDrawerAdapter;
 import data.com.lamegaboxv2.navigation.DrawerItem;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
 
     public static DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
-    public static ActionBarDrawerToggle mDrawerToggle;
-    private CharSequence mDrawerTitle;
-    private CharSequence mTitle;
     CustomDrawerAdapter adapter;
-    private List<DrawerItem> dataList;
-    private String action;
+    public List<DrawerItem> dataList = new ArrayList<>();
+    private ActionBarDrawerToggle mToggle;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
+        setContentView(R.layout.activity_main);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
-
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow,
-                GravityCompat.START);
+               GravityCompat.START);
         // Add Drawer Item to dataList
-        dataList.add(new DrawerItem("Test", R.drawable.ic_launcher));
-        dataList.add(new DrawerItem("Test2", R.drawable.ic_launcher));
-        dataList.add(new DrawerItem("Test3", R.drawable.ic_launcher));
-        dataList.add(new DrawerItem("Test4",
-                R.drawable.ic_launcher));
+        dataList.add(new DrawerItem("Wilhelm Box", R.drawable.ic_wilhelm));
+        dataList.add(new DrawerItem("Balignon Box", R.drawable.ic_balignon));
+        dataList.add(new DrawerItem("Moundir Box", R.drawable.ic_moundir));
+        dataList.add(new DrawerItem("Poubelle Box", R.drawable.ic_launcher));
+        dataList.add(new DrawerItem("1TLAU Box", R.drawable.ic_1tlau));
+        dataList.add(new DrawerItem("Askab Box", R.drawable.ic_launcher));
+        dataList.add(new DrawerItem("Jean Marie Box", R.drawable.ic_jeanmarie));
+        dataList.add(new DrawerItem("Movie Box", R.drawable.ic_launcher));
+        dataList.add(new DrawerItem("Loutre Box", R.drawable.ic_launcher));
+        dataList.add(new DrawerItem("Zelkys Box", R.drawable.ic_zelkys));
+        dataList.add(new DrawerItem("eLive Box", R.drawable.ic_elive));
+        dataList.add(new DrawerItem("Yugi Box", R.drawable.ic_yugi));
+        dataList.add(new DrawerItem("MisterMV Box", R.drawable.ic_mv));
+        dataList.add(new DrawerItem("The Room Box", R.drawable.ic_tommy_wiseau));
         adapter = new CustomDrawerAdapter(this, R.layout.custom_drawer_item, dataList);
 
         mDrawerList.setAdapter(adapter);
-
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close);
+        mToggle.setDrawerIndicatorEnabled(true);
+        mDrawerLayout.setDrawerListener(mToggle);
+
+        if (savedInstanceState == null)
+        {
+            SelectItem(0);
+        }
     }
 
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mToggle.syncState();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+        return mToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
     }
 
-
-    public void SelectItem(int position, boolean firstPick) {
+    public void SelectItem(int position) {
         Fragment fragment = null;
-        Bundle args = new Bundle();
         switch (position) {
             case 0:
-                fragment = new Fragment();
+                fragment = new WilhelmFragment();
                 break;
             case 1:
-                fragment = new Fragment();
+                fragment = new BalignonFragment();
                 break;
             case 2:
-                fragment = new Fragment();
+                fragment = new MoundirFragment();
                 break;
             case 3:
-                fragment = new Fragment();
+                fragment = new PoubelleFragment();
+                break;
+            case 4:
+                fragment = new TlauFragment();
+                break;
+            case 5:
+                fragment = new AskabFragment();
+                break;
+            case 6:
+                fragment = new JeanMarieFragment();
+                break;
+            case 7:
+                fragment = new MovieFragment();
+                break;
+            case 8:
+                fragment = new LoutreFragment();
+                break;
+            case 9:
+                fragment = new ZelkysFragment();
+                break;
+            case 10:
+                fragment = new MkFragment();
+                break;
+            case 11:
+                fragment = new YugiFragment();
+                break;
+            case 12:
+                fragment = new MisterMvFragment();
+                break;
+            case 13:
+                fragment = new RoomTabFragment();
                 break;
             default:
                 break;
         }
-        fragment.setArguments(args);
-        FragmentManager frgManager = getFragmentManager();
-        if( firstPick == true)
-        {
-            frgManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-            mDrawerList.setItemChecked(position, true);
-            setTitle(dataList.get(position).getItemName());
-        }
-        else if (!frgManager.findFragmentById(R.id.content_frame).getClass().equals(fragment.getClass()))
-        {
-            frgManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-            mDrawerList.setItemChecked(position, true);
-            setTitle(dataList.get(position).getItemName());
-        }
+        FragmentManager frgManager = getSupportFragmentManager();
+        frgManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        adapter.setmSelectedItem(position);
+        mDrawerList.setItemChecked(position, true);
         mDrawerLayout.closeDrawer(mDrawerList);
     }
-
 
     private class DrawerItemClickListener implements
             ListView.OnItemClickListener {
@@ -119,25 +163,7 @@ public class MainActivity extends Activity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position,
                                 long id) {
-
-            setNavDrawerItemNormal();
-            View v = mDrawerList.getChildAt(position);
-            TextView txtview = ((TextView) v.findViewById(R.id.drawer_itemName));
-            txtview.setTextColor(getResources().getColor(R.color.darkGray));
-            SelectItem(position, false);
-        }
-    }
-
-    /**
-     * Repasse toutes les textviews du menu en noir
-     */
-    public void setNavDrawerItemNormal()
-    {
-        for (int i=0; i < mDrawerList.getChildCount(); i++)
-        {
-            View v = mDrawerList.getChildAt(i);
-            TextView txtview = ((TextView) v.findViewById(R.id.drawer_itemName));
-            txtview.setTextColor(R.color.darkChoco);
+            SelectItem(position);
         }
     }
 

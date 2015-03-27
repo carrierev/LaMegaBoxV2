@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="data.com.lamegaboxv2.boxes.MkFragment"
+    android:background="@color/pink200Material">
+
+    <TextView
+        android:id="@+id/titleMk"
+        android:text="@string/mk"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp"
+        android:textColor="@color/blueMaterial"/>
+    <ImageButton
+        android:id="@+id/mkOne"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleMk"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_elive"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/mkTwo"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleMk"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_elive"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/mkThree"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mkOne"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_elive"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

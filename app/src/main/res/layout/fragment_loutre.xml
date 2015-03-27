@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="data.com.lamegaboxv2.boxes.TlauFragment"
+    android:background="@color/amberMaterial">
+
+    <TextView
+        android:id="@+id/titleLoutre"
+        android:text="@string/loutre"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
+    <ImageButton
+        android:id="@+id/loutreOne"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleLoutre"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_balignon"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/loutreTwo"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleLoutre"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_balignon"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/loutreThree"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loutreTwo"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_balignon"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

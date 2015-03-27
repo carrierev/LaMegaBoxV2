@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="data.com.lamegaboxv2.boxes.MoundirFragment"
+    android:background="@color/brownMaterial">
+
+    <TextView
+        android:id="@+id/titleMoundir"
+        android:text="@string/moundir"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/moundirOne"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titleMoundir"
+        android:src="@drawable/ic_moundir"
+        android:contentDescription="@string/soundButton"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/moundirTwo"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titleMoundir"
+        android:src="@drawable/ic_moundir"
+        android:contentDescription="@string/soundButton"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/moundirThree"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/moundirOne"
+        android:src="@drawable/ic_moundir"
+        android:contentDescription="@string/soundButton"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>

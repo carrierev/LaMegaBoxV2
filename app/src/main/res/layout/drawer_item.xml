@@ -11,7 +11,7 @@
     android:layout_marginLeft="10sp"
     android:layout_marginRight="10sp"
     android:src="@drawable/ic_launcher"
-    android:contentDescription="placeholder" />
+    android:contentDescription="@string/soundButton" />
 
   <TextView
     android:id="@+id/drawer_item_text"
@@ -20,7 +20,8 @@
     android:textSize="25sp"
     android:paddingTop="8sp"
     android:paddingBottom="8sp"
-    android:paddingLeft="15sp" />
+    android:paddingLeft="15sp"
+    android:paddingStart="15sp"/>
     
 
 </LinearLayout>

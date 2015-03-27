@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">LaMegaBoxV2</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">La Mega Box</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="wilhelm">Wilhelm Box</string>
+    <string name="balignon">Balignon Box</string>
+    <string name="moundir">Moundir Box</string>
+    <string name="poubelle">Poubelle Box</string>
+    <string name="tlow">1TLAU Box</string>
+    <string name="askab">Askab Box</string>
+    <string name="loutre">Loutre Box</string>
+    <string name="movie">Movie Box</string>
+    <string name="chevre">Chevre Box</string>
+    <string name="zelkys">Zelkys Box</string>
+    <string name="kenbogard">Ken Bogard Box</string>
+    <string name="mk">(eLive|Showprime) Box</string>
+    <string name="yugi">Yugi Box</string>
+    <string name="cjp">CJP Box</string>
+    <string name="mistermv">MisterMV Box</string>
+    <string name="room">The Room Box</string>
+    <string name="roomtwo">The Second Room Box</string>
+    <string name="jeanmarie">Jean Marie Box</string>
+    <string name="soundButton">Bouton produisant un son</string>
 
 </resources>

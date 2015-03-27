@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="data.com.lamegaboxv2.boxes.TlauFragment"
+    android:background="@color/purple400Material">
+
+    <TextView
+        android:id="@+id/titleMistermv"
+        android:text="@string/mistermv"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
+    <ImageButton
+        android:id="@+id/mistermvOne"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleMistermv"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_mv"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

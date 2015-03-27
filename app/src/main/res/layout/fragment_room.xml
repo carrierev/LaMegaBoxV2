@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="data.com.lamegaboxv2.boxes.RoomFragment"
+    android:background="@color/tealMaterial">
+
+    <TextView
+        android:id="@+id/titleRoom"
+        android:text="@string/room"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
+    <ImageButton
+        android:id="@+id/roomOne"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleRoom"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:id="@+id/roomTwo"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleRoom"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:id="@+id/roomThree"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleRoom"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/roomFour"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/roomTwo"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:id="@+id/roomFive"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roomThree"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:id="@+id/roomSix"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/roomTwo"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/roomSeven"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roomFour"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/roomEight"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roomSix"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:id="@+id/roomNine"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/roomFour"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/roomTen"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roomNine"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/roomEleven"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roomNine"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:id="@+id/roomTwelve"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/roomNine"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/ic_tommy_wiseau"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

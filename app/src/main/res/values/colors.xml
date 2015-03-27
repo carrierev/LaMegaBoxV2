@@ -6,5 +6,36 @@
     <item name="darkGray" type="color">#333333</item>
     <item name="mediumGray" type="color">#666666</item>
     <item name="lightGray" type="color">#CCCCCC</item>
+    <item name="greenGrass" type="color">#7cfc00</item>
+    <item name="greenGrassDark" type="color">#82b000</item>
+    <item name="nearDark" type="color">#1a1a1a</item>
+    <item name="darkRed" type="color">#800000</item>
+
+    <item name="tealMaterial" type="color">#009688</item>
+    <item name="purpleMaterial" type="color">#9c27b0</item>
+    <item name="purple400Material" type="color">#ba68c8</item>
+    <item name="redMaterial" type="color">#f44336</item>
+    <item name="red900Material" type="color">#b71c1c</item>
+    <item name="pinkMaterial" type="color">#e91e63</item>
+    <item name="pink200Material" type="color">#f48fb1</item>
+    <item name="pinkA400Material" type="color">#f50057</item>
+    <item name="greenMaterial" type="color">#4caf50</item>
+    <item name="green900Material" type="color">#1b5e20</item>
+    <item name="indigoMaterial" type="color">#3f51b5</item>
+    <item name="indigo700Material" type="color">#303f9f</item>
+    <item name="blue50Material" type="color">#e3f2fd</item>
+    <item name="blueMaterial" type="color">#2196f3</item>
+    <item name="blueA200Material" type="color">#448aff</item>
+    <item name="lightBlueMaterial" type="color">#03a9f4</item>
+    <item name="cyanMaterial" type="color">#00bcd4</item>
+    <item name="limeMaterial" type="color">#cddc39</item>
+    <item name="yellowMaterial" type="color">#ffeb3b</item>
+    <item name="amberMaterial" type="color">#ffc107</item>
+    <item name="brownMaterial" type="color">#795548</item>
+    <item name="blueGreyMaterial" type="color">#607d8b</item>
+    <item name="blueGrey900Material" type="color">#263238</item>
+    <item name="greyMaterial" type="color">#9e9e9e</item>
+    <item name="grey900Material" type="color">#212121</item>
+
 
 </resources>
