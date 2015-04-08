@@ -60,10 +60,10 @@ public class MainActivity extends ActionBarActivity {
         dataList.add(new DrawerItem("Moundir Box", R.drawable.ic_moundir));
         dataList.add(new DrawerItem("Poubelle Box", R.drawable.ic_launcher));
         dataList.add(new DrawerItem("1TLAU Box", R.drawable.ic_1tlau));
-        dataList.add(new DrawerItem("Askab Box", R.drawable.ic_launcher));
+        dataList.add(new DrawerItem("Askab Box", R.drawable.ic_askab));
         dataList.add(new DrawerItem("Jean Marie Box", R.drawable.ic_jeanmarie));
         dataList.add(new DrawerItem("Movie Box", R.drawable.ic_launcher));
-        dataList.add(new DrawerItem("Loutre Box", R.drawable.ic_launcher));
+        dataList.add(new DrawerItem("Loutre Box", R.drawable.ic_loutre));
         dataList.add(new DrawerItem("Zelkys Box", R.drawable.ic_zelkys));
         dataList.add(new DrawerItem("eLive Box", R.drawable.ic_elive));
         dataList.add(new DrawerItem("Yugi Box", R.drawable.ic_yugi));

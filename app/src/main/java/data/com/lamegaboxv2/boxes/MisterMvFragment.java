@@ -61,6 +61,7 @@ public class MisterMvFragment extends Fragment {
                 mistermvOne.start();
             }
         });
+/*
 
         ImageButton secondMistermv = (ImageButton) view.findViewById(R.id.mistermvTwo);
         secondMistermv.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +78,7 @@ public class MisterMvFragment extends Fragment {
                // mistermvThree.start();
             }
         });
+*/
 
 		return view;
 	}
